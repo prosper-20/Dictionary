@@ -54,4 +54,4 @@ def word(request):
     }
 
 
-    return render(request, 'word.htm', {'se': se, 'ae': ae, 'results': results})
+    return render(request, 'core/word.html', {'se': se, 'ae': ae, 'results': results})
