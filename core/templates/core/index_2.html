@@ -73,7 +73,7 @@
 				<div class="intro">Search Your Word Below</div>
 				
 
-			    <form class="signup-form form-inline justify-content-center pt-3" action="word">
+			    <form class="signup-form form-inline justify-content-center pt-3" action="{% url 'word' %}">
                     <div class="form-group">
                         <label class="sr-only" for="semail">Enter Your Word</label>
                         <input type="text" id="semail" name="word" class="form-control mr-md-1 semail" placeholder="Enter Your Word">
@@ -88,7 +88,7 @@
 		    <div class="container">
 				{% block content %}
 				<div align="center">
-				<img alt="dictionary_image" src="{% static 'assets/images/dictionary.jpg' %}" width="365" height="365">
+				<img alt="dictionary_image" src="{% static 'core/assets/images/dictionary.jpg' %}" width="365" height="365">
 				</div>
 				{% endblock %}
 		    </div>
