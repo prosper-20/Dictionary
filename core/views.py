@@ -4,7 +4,7 @@ import requests
 
 # Create your views here.
 def home(request):
-    return render(request, 'core/index.html')
+    return render(request, 'core/index_2.html')
 
 def word(request):
 
