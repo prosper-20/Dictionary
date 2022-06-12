@@ -34,7 +34,7 @@
 
 			<div id="navigation" class="collapse navbar-collapse flex-column" >
 				<div class="profile-section pt-3 pt-lg-0">
-				    {% block img %}<img class="profile-image mb-3 rounded-circle mx-auto" src="{% static 'assets/images/logo-free - Copy.png' %}" alt="ging_dictionary" >{% endblock %}		
+				    {% block img %}<img class="profile-image mb-3 rounded-circle mx-auto" src="{% static 'core/assets/images/logo-free-Copy.png' %}" alt="ging_dictionary" >{% endblock %}		
 					
 					<div class="bio mb-3">Ging Dictionary Is A Website Where You Can Get Meaning, Synonmys and Antonyms Of Any Word<br></div>
 					<!--<ul class="social-list list-inline py-3 mx-auto">
@@ -73,7 +73,7 @@
 				<div class="intro">Search Your Word Below</div>
 				
 
-			    <form class="signup-form form-inline justify-content-center pt-3" action="{% url 'word' %}">
+			    <form class="signup-form form-inline justify-content-center pt-3" action="word">
                     <div class="form-group">
                         <label class="sr-only" for="semail">Enter Your Word</label>
                         <input type="text" id="semail" name="word" class="form-control mr-md-1 semail" placeholder="Enter Your Word">
