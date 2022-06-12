@@ -39,16 +39,19 @@
             <p>
                 <b>Synonyms:</b>
                 <!-- you changed it from se to new -->
-                {% for s in new %}
-                <a href="/word?word={{s}}"><h3>{{s}}</h3></a>,
-                {% endfor %}
+                <b>{{new}}</b>
+                <!-- {% for s in se %}
+                <a href="/word?word={{s}}"><h3>{{s| truncatewords:5}}</h3></a>,
+                {% endfor %} -->
             </p>
             <br>
             <p>
                 <b>Antonyms: </b>
-                {% for a in ae %}
+                <h2>newest: {{ newest }}</h2>
+                <!-- {{ ae }} -->
+                <!-- {% for a in ae %}
                 <a href="/word?word={{a}}"><h3>{{a}}</h3></a>,
-                {% endfor %}
+                {% endfor %} -->
             </p>
         </div>
 

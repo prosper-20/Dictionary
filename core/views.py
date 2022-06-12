@@ -33,7 +33,7 @@ def word(request):
             re = b.text.strip()
             ss.append(re)
         se = ss
-        new = "".join(se)
+        new = " ".join(se)
         
 
         
@@ -44,6 +44,7 @@ def word(request):
             r = c.text.strip()
             aa.append(r)
         ae = aa
+        newest = " ".join(ae)
     else:
         se = ''
         ae = ''
@@ -55,4 +56,4 @@ def word(request):
     }
 
     # You changed it to word_2.html from word.htm
-    return render(request, 'word_2.html', {'se': se, 'ae': ae, 'new':new, 'results': results})
+    return render(request, 'word_2.html', {'se': se, 'ae': ae, 'new':new, 'newest': newest, 'results': results})
