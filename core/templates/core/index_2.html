@@ -73,7 +73,8 @@
 				<div class="intro">Search Your Word Below</div>
 				
 
-			    <form class="signup-form form-inline justify-content-center pt-3" action="word">
+			    <form class="signup-form form-inline justify-content-center pt-3" action="" method="post">
+					{% csrf_token %}
                     <div class="form-group">
                         <label class="sr-only" for="semail">Enter Your Word</label>
                         <input type="text" id="semail" name="word" class="form-control mr-md-1 semail" placeholder="Enter Your Word">
