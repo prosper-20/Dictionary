@@ -12,7 +12,8 @@
 <main>
 	<div class="container">
 		<h1>Welcome to P's Dictionary</h1>
-		<h2>Find your word!</h2>
+        <h2 align="center">Your search results</h2>
+		
 		<div class="search-box">
 			<div class="search-icon"><i class="fa fa-search search-icon"></i></div>
 			<form action="{% url 'word' %}" class="search-form">
@@ -26,6 +27,9 @@
         </svg>
 			<div class="go-icon"><i class="fa fa-arrow-right"></i></div>
 		</div>
+        <div>
+            <h2 align="center">{{ results.word | title }} </h2>
+        </div>
 
 	</div>
 </main>
