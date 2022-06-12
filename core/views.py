@@ -3,8 +3,8 @@ import bs4
 import requests
 
 # Create your views here.
-def home(request):
-    return render(request, 'core/index_2.html')
+def index(request):
+    return render(request, 'index.htm')
 
 def word(request):
 
@@ -54,4 +54,4 @@ def word(request):
     }
 
 
-    return render(request, 'core/word.html', {'se': se, 'ae': ae, 'results': results})
+    return render(request, 'word.htm', {'se': se, 'ae': ae, 'results': results})
