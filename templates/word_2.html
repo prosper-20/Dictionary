@@ -14,11 +14,11 @@
 		<h1>Welcome to P's Dictionary</h1>
         <h2 align="center">Your search results</h2>
 		
-		<div class="search-box">
+		<!-- <div class="search-box">
 			<div class="search-icon"><i class="fa fa-search search-icon"></i></div>
 			<form action="{% url 'word' %}" class="search-form">
 				<input name="word" type="text" placeholder="Enter a word" id="search" autocomplete="off">
-				<!-- <button type="submit" class="btn btn-primary">Search</button> -->
+				 <button type="submit" class="btn btn-primary">Search</button>
 			</form>
 			<svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 671 111" style="enable-background:new 0 0 671 111;"
 			 xml:space="preserve">
@@ -27,8 +27,29 @@
         </svg>
 			<div class="go-icon"><i class="fa fa-arrow-right"></i></div>
 		</div>
-        <div>
-            <h2 align="center">{{ results.word | title }} </h2>
+        <div> -->
+            <h1 align="center">"{{ results.word | title }}" </h1>
+        </div>
+        <div style="justify-content:center;">
+            <p>
+                <br>
+                <h2>Meaning: {{results.meaning | capfirst}}</h2>
+            </p>
+            <br>
+            <p>
+                <b>Synonyms:</b>
+                <!-- you changed it from se to new -->
+                {% for s in new %}
+                <a href="/word?word={{s}}"><h3>{{s}}</h3></a>,
+                {% endfor %}
+            </p>
+            <br>
+            <p>
+                <b>Antonyms: </b>
+                {% for a in ae %}
+                <a href="/word?word={{a}}"><h3>{{a}}</h3></a>,
+                {% endfor %}
+            </p>
         </div>
 
 	</div>

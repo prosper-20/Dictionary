@@ -27,17 +27,18 @@ def word(request):
     if res2:
         soup2 = bs4.BeautifulSoup(res2.text, 'lxml')
 
-        synonyms = soup2.find_all('a', {'class': 'css-r5sw71-ItemAnchor etbu2a31'})
+        synonyms = soup2.find_all('a', {'class': 'css-1kg1yv8 eh475bn0'})
         ss = []
         for b in synonyms[0:]:
             re = b.text.strip()
             ss.append(re)
         se = ss
+        new = "".join(se)
         
 
         
 
-        antonyms = soup2.find_all('a', {'class': 'css-lqr09m-ItemAnchor etbu2a31'})
+        antonyms = soup2.find_all('a', {'class': 'css-15bafsg eh475bn0'})
         aa = []
         for c in antonyms[0:]:
             r = c.text.strip()
@@ -53,5 +54,5 @@ def word(request):
         'meaning' : meaning1,
     }
 
-
-    return render(request, 'word.htm', {'se': se, 'ae': ae, 'results': results})
+    # You changed it to word_2.html from word.htm
+    return render(request, 'word_2.html', {'se': se, 'ae': ae, 'new':new, 'results': results})
