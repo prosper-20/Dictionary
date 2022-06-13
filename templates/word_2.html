@@ -38,20 +38,16 @@
             <br>
             <p>
                 <b>Synonyms:</b>
-                <!-- you changed it from se to new -->
-                <b>{{new}}</b>
-                <!-- {% for s in se %}
-                <a href="/word?word={{s}}"><h3>{{s| truncatewords:5}}</h3></a>,
-                {% endfor %} -->
+                {% for s in se %}
+                <a href="/word?word={{s}}"><h3>{{s}}</h3></a>,
+                {% endfor %}
             </p>
             <br>
             <p>
                 <b>Antonyms: </b>
-                <h2>newest: {{ newest }}</h2>
-                <!-- {{ ae }} -->
-                <!-- {% for a in ae %}
+                {% for a in ae %}
                 <a href="/word?word={{a}}"><h3>{{a}}</h3></a>,
-                {% endfor %} -->
+                {% endfor %}
             </p>
         </div>
 
