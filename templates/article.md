@@ -17,8 +17,28 @@ In this tutorial, we are going to build an English dictionary using the Django f
 
 
 - #### Creating the Virtual Environment
-    To start off, let us create a virtual environment for this project named `project` The essence of this is to create an isolated environment dedicated to our project.
+    To start off, let us create a virtual environment for this project named `project` The essence of this is to create an isolated environment dedicated to our project. 
 
     > $ python -m venv project
 
 - #### Activate the virtual Environment
+    Now activate the virtual environment using the following command:
+
+    > $ .\project\Scripts\Activate
+
+- #### Installing Django
+    Next, we will then install the necessary libraries inside the virtual envionment including Django, as shown below
+
+    > $ pip install django
+
+- #### Creating the Project and Application
+    Now that we have django installed successfully, let us create a Django project using django's default command `django-admin startproject`, run this command in your terminal :
+
+    > $ django-admin startproject mydictionary
+
+    The command above creates a folder called mydictionary. From this point, we will be working inside this folder. Now `cd` into the `mydictionary` folder. Our next line of action is to create a django app. To do that, run the below command:
+    > $ python manage.py startapp dictionary
+
+    After installing Django successfully and creating the new project, it is necessary to check if the installation was successful, to do that, run the below command:
+
+    > $ python manage.py runserver
