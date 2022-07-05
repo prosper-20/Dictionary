@@ -42,3 +42,7 @@ In this tutorial, we are going to build an English dictionary using the Django f
     After installing Django successfully and creating the new project, it is necessary to check if the installation was successful, to do that, run the below command:
 
     > $ python manage.py runserver
+
+    Make sure you get this output:
+
+    ![alt text](https://www.thepythoncode.com/media/articles/build-dictionary-app-with-django-and-pydictionary-api-python/python_manage.py_runserver.png)
