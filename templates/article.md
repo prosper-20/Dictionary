@@ -1,0 +1,3 @@
+A dictionary is simply a book/electronic medium that outlines words particular to a language along with their meanings. Modern dictionaries also provide informations such as origin, transcription and use cases.
+
+In this tutorial, we are going to build an English dictionary using the Django framewrok. To follow along with this tutorial, it is neceessary to have a basic knowledge of HTML5 and Bootstrap as they would be used in the frontend of this project. Before we delve into this tutorial in-depth i would like us to what Django is. Django is a python framework used for building web applications. For ease of use, i have outlined a table of content so the readercan keep track of his/her progress in the table. Below is the ta
