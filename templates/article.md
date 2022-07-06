@@ -54,8 +54,11 @@ In this tutorial, we are going to build an English dictionary using the Django f
 
   Copy http://127.0.0.1:8000/ into your browser, if you get the below output then you installed Django successfully:
 
+  ![alt text](https://www.thepythoncode.com/media/articles/build-dictionary-app-with-django-and-pydictionary-api-python/Django_installed.png)
+
+
 
 - #### Setting up the App in the Project Folder
-  Next, we’ll need to let Django know about the reviews app we just created. We do this by registering the app.
+  Next, we’ll need to let Django know about the dictionary app we just created. We do this by registering the app.
 
   To register the app, open mydictionary/settings.py file and add `dictionary.apps.DictionaryConfig` to the INSTALLED_APPS list. After adding this, INSTALLED_APPS should look like this:
