@@ -90,4 +90,6 @@ Open the `urls.py` file, and make sure it looks like below
 
   - #### Creating the HTML Templates
   It is time to take a little break from Django and build our HTML pages. We will use HTML for rendering the content and Bootstrap for styling the content.
-  Copy and paste the following code into the `index.html` file.
+
+  In the `mydictionary` folder, create a folder called `templates` and inside this `templates` folder create another folder called `mydictionary`, this enables Djngo to locate the HTML files.
+  For this project, we need three html files, `base.html`, `home.html` and `search.hmtl`, the two files `home.html` and `search.html` will inherit from the `base.html`. This operation is called template inheritance and is very vital in Django programming as it ensures we adhere to the DRY(Don't Repeat Yourself) principle.
