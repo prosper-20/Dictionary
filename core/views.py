@@ -38,7 +38,7 @@ def word(request):
 
         
 
-        antonyms = soup2.find_all('a', {'class': 'css-15bafsg eh475bn0'})
+        antonyms = soup2.find_all('a', {'class': 'css-pc0050 eh475bn0'})
         aa = []
         for c in antonyms[0:]:
             r = c.text.strip()
@@ -56,7 +56,7 @@ def word(request):
     }
 
     # You changed it to word_2.html from word.htm
-    return render(request, 'word_2.html', {'se': se, 'ae': ae, 'new':new, 'newest': newest, 'results': results})
+    return render(request, 'word.htm', {'se': se, 'ae': ae, 'new':new, 'newest': newest, 'results': results})
 
 
 

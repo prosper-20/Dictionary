@@ -86,3 +86,8 @@ Open the `urls.py` file, and make sure it looks like below
   To do this, let's update the code in our SearchView like this.
 
   ![alt text](/static/2.png)
+
+
+  - #### Creating the HTML Templates
+  It is time to take a little break from Django and build our HTML pages. We will use HTML for rendering the content and Bootstrap for styling the content.
+  Copy and paste the following code into the `index.html` file.
