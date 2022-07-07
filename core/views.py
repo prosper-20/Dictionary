@@ -91,8 +91,23 @@ def SearchView(request):
             synonym_list.append(re)
         main_synonym_list = synonym_list
 
-    
-    return render(request, 'mydictionary/serach.html')
+        antonyms = soup_2.find_all('a', {'class': 'css-lqr09m-ItemAnchor etbu2a31'})
+        antonyms_list = []
+        for c in antonyms[0:]:
+            r = c.text.strip()
+            antonyms_list.append(r)
+        main_antonym_list = antonyms_list
+    else:
+        main_synonym_list = ''
+        main_antonym_list = ''
+
+
+    results = {
+        'word' : word,
+        'meaning' : meaning_1,
+    }
+
+    return render(request, 'mydictionary/serach.html', {'main_synonym_list': main_synonym_list, 'main_antonym_list': main_antonym_list, 'results': results})
 
 
 def word(request):
