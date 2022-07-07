@@ -70,3 +70,7 @@ In this tutorial, we are going to build an English dictionary using the Django f
 Let us now configure our URLs, in Django, we have two `urls.py` files, the first one comes with Django and is used for registering all the apps' URLs and it is found in the project root folder, while the second `urls.py` file is created inside the app’s folder by the programmer, in our case it will be created inside the dictionary folder.
 
 First things first, let us register our app’s URLs, and open the `urls.py` file in the project root folder:
+
+![alt text](/static/urls.py2.png)
+
+Open the `urls.py` file, and make sure it looks like below
