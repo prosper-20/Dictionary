@@ -74,3 +74,5 @@ First things first, let us register our app’s URLs, and open the `urls.py` fil
 ![alt text](/static/urls.py2.png)
 
 Open the `urls.py` file, and make sure it looks like below
+
+![alt text](https://i.stack.imgur.com/nU0Sj.png)
