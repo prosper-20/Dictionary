@@ -57,3 +57,42 @@ def word(request):
 
     # You changed it to word_2.html from word.htm
     return render(request, 'word.htm', {'se': se, 'ae': ae, 'new':new, 'newest': newest, 'results': results})
+
+
+
+
+def HomeView(request):
+    return render(request, 'mydictionary/index.html')
+
+
+def SearchView(request):
+    return render(request, 'mydictionary/serach.html')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
