@@ -27,7 +27,7 @@ def word(request):
     if res2:
         soup2 = bs4.BeautifulSoup(res2.text, 'lxml')
 
-        synonyms = soup2.find_all('a', {'class': 'css-1yi9ipw e1ccqdb60'})
+        synonyms = soup2.find_all('a', {'class': 'css-1kg1yv8 eh475bn0'})
         ss = []
         for b in synonyms[0:]:
             re = b.text.strip()
@@ -56,7 +56,7 @@ def word(request):
     }
 
     # You changed it to word_2.html from word.htm
-    return render(request, 'word.htm', {'se': se, 'ae': ae, 'new':new, 'newest': newest, 'results': results})
+    return render(request, 'word_2.html', {'se': se, 'ae': ae, 'new':new, 'newest': newest, 'results': results})
 
 
 
