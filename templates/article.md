@@ -84,4 +84,5 @@ Open the `urls.py` file, and make sure it looks like below
   
   We are now at the climax of this tutorial. In order to get the meaning of words input in by our users, we would be using a programming concept known as web scraping. Web scraping simply entails obtaining large amount of data from websites. In our case, once the user inputs a word in the search form on the home page, the backend code automatically transfers the word to another website, gets the meaning of the word and returns the word back to the user on our own website.
   To do this, let's update the code in our SearchView like this.
-  
+
+  ![alt text](/static/2.png)
