@@ -27,7 +27,7 @@ def word(request):
     if res2:
         soup2 = bs4.BeautifulSoup(res2.text, 'lxml')
 
-        synonyms = soup2.find_all('a', {'class': 'css-1kg1yv8 eh475bn0'})
+        synonyms = soup2.find_all('a', {'class': 'css-1yi9ipw e1ccqdb60'})
         ss = []
         for b in synonyms[0:]:
             re = b.text.strip()
